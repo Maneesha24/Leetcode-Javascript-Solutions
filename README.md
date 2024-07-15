@@ -1,6 +1,6 @@
-# Neetcode 150 Javascript Solutions
+# Leetcode Javascript Solutions
 
-This repository includes Javascript solutions to the curated Neetcode 150 list. Each solution is accompanied by test cases that can be run using Jest.
+This repository includes Javascript solutions to the leetcode problems. Each solution is accompanied by test cases that can be run using Jest.
 
 ## Getting Started
 
@@ -14,14 +14,14 @@ To utilize this repository, follow these simple steps:
 ### Clone the Repository
 
 ```bash
-https://github.com/Maneesha24/Neetcode-150-solutions.git
+https://github.com/Maneesha24/Leetcode-solutions.git
 ```
 
 ### Initialize the Project
 Navigate into the cloned repository and initialize it using Yarn.
 
 ```bash
-cd Neetcode-150-solutions
+cd Leetcode-solutions
 yarn install
 ```
 
