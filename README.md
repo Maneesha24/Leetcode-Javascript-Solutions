@@ -1,6 +1,6 @@
 # Leetcode Javascript Solutions
 
-This repository includes Javascript solutions to the leetcode problems. Each solution is accompanied by test cases that can be run using Jest.
+This repository includes 200+ Javascript solutions to the leetcode problems. Each solution is accompanied by test cases that can be run using Jest.
 
 ## Getting Started
 
