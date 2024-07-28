@@ -12,8 +12,9 @@ const pathSum = (root, targetSum) => {
   }
 
   const result = [];
+  const path = [];
 
-  const traverse = (node, target, path) => {
+  const traverse = (node, target) => {
     if (!node) {
       return;
     }
@@ -23,14 +24,14 @@ const pathSum = (root, targetSum) => {
     if (!node.left && !node.right && target === node.val) {
       result.push([...path]);
     } else {
-      traverse(node.left, target - node.val, path);
-      traverse(node.right, target - node.val, path);
+      traverse(node.left, target - node.val);
+      traverse(node.right, target - node.val);
     }
 
     path.pop();
   };
 
-  traverse(root, targetSum, []);
+  traverse(root, targetSum);
   return result;
 };
 

@@ -4,8 +4,6 @@
  * Koko can decide her bananas-per-hour eating speed of k. Each hour, she chooses some pile of bananas and eats k bananas from that pile. If the
  * pile has less than k bananas, she eats all of them instead and will not eat any more bananas during this hour. Koko likes to eat slowly but still
  * wants to finish eating all the bananas before the guards return. Return the minimum integer k such that she can eat all the bananas within h hours.
- * Time complexity - O(N * log(M))
- * Space complexity - O(1)
  * @param {number[]} piles
  * @param {number} h
  * @return {number}

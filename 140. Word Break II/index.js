@@ -28,7 +28,7 @@ const wordBreak = (s, wordDict) => {
     }
   };
 
-  backtrack(s, []);
+  backtrack(s);
   return result;
 };
 

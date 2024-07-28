@@ -31,34 +31,38 @@ const platesBetweenCandles = (s, queries) => {
       left++;
     }
 
-    let ans;
+    let count;
     if (right <= left) {
-      ans = 0;
+      count = 0;
     } else {
-      ans = candles[right] - candles[left] - (right - left);
+      count = candles[right] - candles[left] - (right - left);
     }
 
-    result.push(ans);
+    result.push(count);
   }
 
   return result;
 };
 
 const indexFinder = function (candles, val) {
+
   let left = 0;
   let right = candles.length - 1;
+
   while (left < right) {
     let mid = Math.floor((left + right) / 2);
+
     if (candles[mid] === val) {
-      left = mid;
-      break;
+      return mid;
     }
+
     if (candles[mid] > val) {
       right = mid - 1;
     } else {
       left = mid + 1;
     }
   }
+
   return left;
 };
 
