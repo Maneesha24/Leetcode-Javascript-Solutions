@@ -23,10 +23,10 @@ const reorganizeString = (s) => {
     maxHeap.add([freqObj[char], char]);
   }
 
-    const maxFreq = maxHeap.heap[0][0];
-    if (maxFreq > Math.ceil(s.length / 2)) {
-      return "";
-    }
+  const maxFreq = maxHeap.heap[0][0];
+  if (maxFreq > Math.ceil(s.length / 2)) {
+    return "";
+  }
 
   let prev = null;
   let result = "";

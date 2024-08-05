@@ -1,4 +1,3 @@
-const GraphNode = require("../GraphNode.js");
 const validTree = require("./index.js");
 
 test("should pass all test conditions", () => {

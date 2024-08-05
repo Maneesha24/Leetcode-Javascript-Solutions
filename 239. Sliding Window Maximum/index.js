@@ -11,9 +11,8 @@ const maxSlidingWindow = (nums, k) => {
   let result = [];
 
   let deque = [];
-  let i = 0;
 
-  while (i < nums.length) {
+  for (let i = 0; i < nums.length; i++) {
     while (deque.length > 0 && deque[0] < i - k + 1) {
       deque.shift();
     }
@@ -27,8 +26,6 @@ const maxSlidingWindow = (nums, k) => {
     if (i >= k - 1) {
       result.push(nums[deque[0]]);
     }
-
-    i++;
   }
 
   return result;
