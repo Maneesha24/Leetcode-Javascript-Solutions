@@ -6,7 +6,7 @@
  * @param {number} amount
  * @return {number}
  */
-var coinChange = function (coins, amount) {
+const coinChange = (coins, amount) => {
   let dp = new Array(amount + 1).fill(Infinity);
   dp[0] = 0;
 
