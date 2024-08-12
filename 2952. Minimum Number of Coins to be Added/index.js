@@ -8,6 +8,8 @@
  * @return {number}
  */
 const minimumAddedCoins = (coins, target) => {
+  coins.sort((a, b) => a - b);
+
   let currentSum = 0;
   let result = 0;
   let i = 0;
